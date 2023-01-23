@@ -1,0 +1,45 @@
+/* default settings*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+@media screen and (max-width: 575px) {
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 0px;
+  }
+
+  .o-container {
+    width: 100%;
+  }
+
+  .min-container {
+    width: 100%;
+  }
+}
