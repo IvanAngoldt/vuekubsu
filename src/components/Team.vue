@@ -1,76 +1,68 @@
 <template>
-  <div id="Team">
-    <div class="header">
-      Команда
+  <div class="team _container">
+    <div class="team__title">
+            <span>
+                Команда
+            </span>
     </div>
-    <div class="team">
-      <div class="desktop-flex">
-        <div class="team-member">
-          <img src="../assets/img/team/Sergej-Sinica.jpg" alt="Сергей Синица">
-          <div class="member-name">
-            Сергей Синица
-          </div>
-          <div class="speciality">
-            Руководитель отдела веб-разработки,
-            канд. техн. наук, заместитель директора
-          </div>
+    <div class="team__list _min-container">
+      <div class="team__list-item">
+        <div class="team__photo">
+          <img src="../assets/img/team/Sergej-Sinica.jpg" alt="сотрудник">
         </div>
-        <div class="team-member">
-          <img src="../assets/img/team/Roman-Agabekov.jpg" alt="Роман Агабеков">
-          <div class="member-name">
-            Роман Агабеков
-          </div>
-          <div class="speciality">
-            Руководитель отдела DevOPS, директор
-          </div>
-        </div>
-        <div class="team-member">
-          <img src="../assets/img/team/Aleksej-Sinica.jpg" alt="Алексей Синица">
-          <div class="member-name">
-            Алексей Синица
-          </div>
-          <div class="speciality ">
-            Руководитель отдела поддержки сайтов
-          </div>
+        <div class="team__descr">
+          <div class="team__descr-name">Сергей Синица</div>
+          <div class="team__descr-position">Руководитель отдела веб-разработки, канд. техн. наук, заместитель
+            директора</div>
         </div>
       </div>
-      <div class="desktop-flex">
-        <div class="team-member">
-          <img src="../assets/img/team/Darya-Bochkaryova.jpg" alt="Дарья Бочкарёва">
-          <div class="member-name">
-            Дарья Бочкарёва
-          </div>
-          <div class="speciality">
-            Руководитель отдела продвижения,
-            контекстной рекламы и
-            контент-поддержки сайтов
-          </div>
+      <div class="team__list-item">
+        <div class="team__photo">
+          <img src="../assets/img/team/Roman-Agabekov.jpg" alt="сотрудник">
         </div>
-        <div class="team-member">
-          <img src="../assets/img/team/Irina-Torkunova.jpg" alt="Ирина Торкунова">
-          <div class="member-name">
-            Ирина Торкунова
-          </div>
-          <div class="speciality">
-            Менеджер по работе с клиентами
-          </div>
-        </div>
-        <div class="team-member">
-          <img src="../assets/img/team/Aleksandr-Dolzhenkov.jpg" alt="Александр Долженков">
-          <div class="member-name">
-            Александр Долженков
-          </div>
-          <div class="speciality">
-            Web-разработчик
-          </div>
+        <div class="team__descr">
+          <div class="team__descr-name">Роман Агабеков</div>
+          <div class="team__descr-position">Руководитель отдела DevOPS, директор</div>
         </div>
       </div>
-    </div>
-
-    <div class="team-btn">
-      <button>
-        ВСЯ КОМАНДА
-      </button>
+      <div class="team__list-item">
+        <div class="team__photo">
+          <img src="../assets/img/team/Aleksej-Sinica.jpg" alt="сотрудник">
+        </div>
+        <div class="team__descr">
+          <div class="team__descr-name">Алексей Синица</div>
+          <div class="team__descr-position">Руководитель отдела поддержки сайтов</div>
+        </div>
+      </div>
+      <div class="team__list-item">
+        <div class="team__photo">
+          <img src="../assets/img/team/Darya-Bochkaryova.jpg" alt="сотрудник">
+        </div>
+        <div class="team__descr">
+          <div class="team__descr-name">Дарья Бочкарёва</div>
+          <div class="team__descr-position">Руководитель отдела продвижения, контекстной рекламы и
+            контент-поддержки
+            сайтов</div>
+        </div>
+      </div>
+      <div class="team__list-item">
+        <div class="team__photo">
+          <img src="../assets/img/team/Irina-Torkunova.jpg" alt="сотрудник">
+        </div>
+        <div class="team__descr">
+          <div class="team__descr-name">Ирина Торкунова</div>
+          <div class="team__descr-position">Менеджер по работе с клиентами</div>
+        </div>
+      </div>
+      <div class="team__list-item">
+        <div class="team__photo">
+          <img src="../assets/img/team/Aleksandr-Dolzhenkov.jpg" alt="сотрудник">
+        </div>
+        <div class="team__descr">
+          <div class="team__descr-name">Александр Долженков</div>
+          <div class="team__descr-position">Web-разработчик</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -81,66 +73,107 @@ export default {
 </script>
 <style scoped>
 
-@media (min-width: 1200px){
-  .desktop-flex {
-    display: flex;
-  }
+.team {
+  width: 100%;
+  margin-top: 160px;
 }
 
-
-.header{
-  width: 400px;
-  margin: 5rem auto;
-  font-size: 38px;
-  font-family: Montserrat-Bold;
+.team__title {
   font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
   text-align: center;
+  color: #050C33;
 }
 
-.team{
-  width: 1200px;
+.team__list {
+  width: 1080px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
-.team-member{
-  width: 330px;
-  margin: 2rem;
-  margin-top: 0;
+.team__list-item {
+  width: 280px;
+  margin-top: 80px;
 }
 
-.team-member img{
-  width: 330px;
+.team__photo {
+  margin-bottom: 30px;
 }
 
-.speciality{
-  font-family: Montserrat;
-  font-size: larger;
-  margin-top: 1rem;
+.team__photo img {
+  width: 280px;
+  height: 280px;
 }
 
-.member-text{
-  margin-top: 1rem;
-  color: #4f5a73;
+.team__descr-name {
+  color: #050C33;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.team-btn{
-  margin: 2rem auto;
-  width: fit-content;
+.team__descr-position {
+  font-size: 16px;
+  line-height: 22px;
+  color: #050C33;
+  opacity: 0.7;
 }
 
-.team-btn button{
-  width: 15rem;
-  height: 3rem;
-  border: 1px solid gray;
-  border-radius: 4px;
-  color: #111111;
-  background-color: white;
-}
 
-.team-btn button:hover{
-  transition: 100ms;
-  color: #ffffff;
-  background-color: #111111;
+
+
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0px;
+  }
+
+  ._container {
+    width: 100%;
+  }
+
+  ._min-container {
+    width: 100%;
+  }
+
+  .team {
+    padding: 0px 15px;
+  }
+
+  .team__title {
+    margin-bottom: 60px;
+    font-size: 25px;
+  }
+
+  .team__list .team__list-item {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    width: 155px;
+  }
+
+  .team__photo {
+    margin-bottom: 20px;
+  }
+
+  .team__photo img {
+    width: 155px;
+    height: 155px;
+  }
+
+  .team__descr .team__descr-name {
+    font-size: 14px;
+  }
+
+  .team__descr .team__descr-position {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #050C33;
+    opacity: 0.7;
+  }
 }
 
 </style>

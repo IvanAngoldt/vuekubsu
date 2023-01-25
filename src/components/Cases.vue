@@ -175,7 +175,10 @@ export default {
   margin: 20px auto;
 }
 
-@media screen and (max-width: 700px) {
+
+
+
+@media screen and (max-width: 575px) {
   .cases {
     margin-top: 1200px;
   }

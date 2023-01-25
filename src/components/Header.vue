@@ -14,8 +14,8 @@
           <li class="header__menu-link" id="sup"><a href="#support">Поддержка сайтов</a></li>
           <li class="header__menu-link" id="tar"><a href="#plans">Тарифы</a></li>
           <li class="header__menu-link" id="port"><a href="#cases">Наши работы</a></li>
-          <li class="header__menu-link" id="rew"><a href="#block8">Отзывы</a></li>
-          <li class="header__menu-link" id="cont"><a href="#webform">Контакты</a></li>
+          <li class="header__menu-link" id="rew"><a href="#Rewiews">Отзывы</a></li>
+          <li class="header__menu-link" id="cont"><a href="#footer">Контакты</a></li>
           <ul class="header__contacts">
             <li class="header__phone"><a href="tel:8800222-26-73">8 800 222-26-73</a></li>
             <li class="header__lang">
@@ -87,7 +87,6 @@
             </p>
 
           </div>
-
         </div>
       </div>
     </div>
@@ -392,7 +391,16 @@ li {
   left: 0;
 }
 
-@media screen and (max-width: 700px) {
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
 
   html,
   body {
@@ -413,7 +421,6 @@ li {
   }
 
   /* основной блок header */
-
   .header__container {
     width: 100%;
     flex-direction: column;
@@ -435,7 +442,6 @@ li {
   }
 
   /* burger menu */
-
   .header__burger {
     right: 0;
     bottom: 0;
@@ -477,7 +483,6 @@ li {
   }
 
   /* header__menu */
-
   .header__menu {
     position: fixed;
     background-color: #333;
@@ -554,7 +559,6 @@ li {
   }
 
   /* основная информация header */
-
   .header__content {
     width: 100%;
     flex-direction: column;
@@ -577,6 +581,7 @@ li {
   .header__btn {
     margin: 0px auto;
   }
+
   .header .header__btn {
     background-color: inherit;
     margin-bottom: 40px;
@@ -591,7 +596,6 @@ li {
   }
 
   /* достижения в header */
-
   .header__achiev {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -623,495 +627,5 @@ li {
     position: absolute;
     top: -10px;
   }
-
-  .services {
-    padding: 60px 15px;
-  }
-
-  .services__list {
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-  }
-
-  .services .services__title {
-    padding: 10px 10px;
-    margin: 0;
-    font-size: 25px;
-    line-height: 35px;
-    width: 100%;
-  }
-
-  .services .services__text {
-    margin: 0;
-    padding: 20px 10px;
-    width: 100%;
-  }
-
-  .services__item {
-    width: 100%;
-    margin-right: 0px;
-  }
-
-  .services__item p {
-    width: 135px;
-    font-size: 13px;
-    margin-top: 25px;
-    margin-left: 20px;
-  }
-
-  .services__item img {
-    margin: 0px auto;
-    display: block;
-  }
-
-  .services__item::before {
-    left: 0;
-    top: 8.76%;
-    bottom: 54.64%;
-    content: "";
-    height: 71px;
-    width: 114px;
-    background: url(../assets/img/services/icon-bg.svg) no-repeat;
-    position: absolute;
-  }
-
-  .support {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .support__list {
-    margin: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr
-  }
-
-  .support__title {
-    font-size: 30px;
-    width: 250px;
-    line-height: 35px;
-  }
-
-  .support__item {
-    width: 100%;
-  }
-
-  .support__wrapper {
-    padding: 0px 10px;
-    height: 1000px;
-  }
-
-  .support__expertise-title {
-    font-size: 25px;
-    width: 300px;
-    margin-top: -100px;
-    line-height: 30px;
-  }
-
-  .support__expertise-list {
-    flex-direction: column;
-  }
-
-  .support__expertise-list .support__expertise-item {
-    margin-top: 30px;
-  }
-
-  .support__laptop {
-    top: 685px;
-    width: 390px;
-    height: 450px;
-  }
-
-  .support__laptop img {
-    width: 400px;
-  }
-
-  /* тарифы  */
-
-  .plans {
-    height: 1000px;
-    margin: 0;
-  }
-
-  .plans__price-card h3 {
-    font-size: 40px;
-  }
-
-  .plans .scaled {
-    transform: scale(1);
-    box-shadow: none;
-  }
-
-  .plans .business-scale .plans__btn {
-    width: 100%;
-    height: 60px;
-    margin-top: 0;
-    background-color: white;
-    color: #F14D34;
-  }
-
-  .plans .business-scale {
-    transform: scale(1);
-    box-shadow: none;
-  }
-
-  .plans__card-business {
-    z-index: 1;
-  }
-
-  .plans__card-business .plans__wrapper {
-    width: 300px;
-    margin: 0px auto;
-    margin-left: 0;
-  }
-
-  .plans .scaled .plans__btn {
-    width: 100%;
-    background-color: #F14D34;
-  }
-
-  .plans__body .plans__title {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-
-  .plans__body>p {
-    width: 100%;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .plans__cards {
-    margin: 0 20px;
-    flex-direction: column;
-  }
-
-  .plans__cards .plans__card {
-    padding: 30px 10px 20px;
-    margin: 10px 0px;
-    width: 100%;
-    height: auto;
-  }
-
-  .plans__footer-text {
-    text-align: center;
-    width: 100%;
-    margin: 20px auto;
-  }
-
-  .plans__card-starting {
-    left: 0px;
-  }
-
-  .plans__card-vip {
-    right: 0px;
-  }
-
-  .plans__card-line {
-    width: 100%;
-  }
-
-  .plans__card .plans__wrapper {
-    width: 100%;
-  }
-
-  .plans__card p {
-    font-size: 14px;
-  }
-
-  .plans__btn {
-    margin: 0px auto;
-    background-color: inherit;
-    color: #f14d34;
-    width: 100%;
-  }
-
-  .cases {
-    margin-top: 1200px;
-  }
-
-  .cases__title {
-    margin-bottom: 30px;
-    font-size: 25px;
-  }
-
-  .cases__items {
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .cases__width-380 {
-    width: 100%;
-    height: 440px;
-    margin-bottom: 0px;
-  }
-
-  .cases__width-380 img {
-    width: 100%;
-  }
-
-  .cases__text {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .cases__width-380 .cases__text {
-    margin: 20px;
-    padding: 0;
-  }
-
-  .cases__small-case .cases__text {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .cases__width-780 {
-    width: 100%;
-    height: 440px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-  }
-
-  .cases__width-780 span {
-    position: absolute;
-    top: -100px;
-    right: 0;
-    padding: 0;
-    color: #fff;
-  }
-
-  .cases__width-780 img {
-    width: 100%;
-    height: 320px;
-  }
-
-  /* Команда */
-
-  .team {
-    padding: 0px 15px;
-  }
-
-  .team__title {
-    margin-bottom: 60px;
-    font-size: 25px;
-  }
-
-  .team__list .team__list-item {
-    margin-bottom: 20px;
-    margin-top: 0px;
-    width: 155px;
-  }
-
-  .team__photo {
-    margin-bottom: 20px;
-  }
-
-  .team__photo img {
-    width: 155px;
-    height: 155px;
-  }
-
-  .team__descr .team__descr-name {
-    font-size: 14px;
-  }
-
-  .team__descr .team__descr-position {
-    font-family: "Montserrat";
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 22px;
-    color: #050C33;
-    opacity: 0.7;
-  }
-
-  /* отзывы */
-
-  .reviews {
-    padding: 10px;
-    background: url("../assets/img/reviews/right-quote-sign.svg") no-repeat left top/35%;
-  }
-
-  .reviews__title {
-    margin-bottom: 70px;
-    font-size: 25px;
-  }
-
-  .reviews__wrapper {
-    width: 100%;
-    flex-direction: column;
-    padding: 40px 10px;
-  }
-
-  .reviews__wrapper::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
-    z-index: -1;
-
-    background: #FFFFFF;
-    opacity: 0.5;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    box-shadow: 0px 4px 60px rgba(162, 162, 162, 0.25);
-    border-radius: 5px;
-
-  }
-
-  .reviews__wrapper::after {
-    content: "";
-    position: absolute;
-    top: -30px;
-    bottom: 0;
-    left: 30px;
-    right: 30px;
-    z-index: -2;
-
-    background: #FFFFFF;
-    opacity: 0.34;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    box-shadow: 0px 4px 60px rgba(162, 162, 162, 0.25);
-    border-radius: 5px;
-  }
-
-  .reviews__wrapper .reviews__slider {
-    border-right: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 0px;
-    width: 100%;
-    padding: 0px 10px 30px;
-  }
-
-  .reviews__slider .reviews__comment {
-    width: 100%;
-  }
-
-  .reviews__slider .reviews__person {
-    width: 100%;
-  }
-
-  .slick__arrows {
-    margin-top: 20px;
-  }
-
-  /* партнеры */
-
-  .partners {
-    padding: 10px 0px;
-  }
-
-  .partners .slider__item {
-    height: 100px;
-    width: 200px;
-  }
-
-  .partners .partners__title {
-    padding: 10px 50px;
-    font-size: 25px;
-  }
-
-  .partners .partners__descr {
-    padding: 15px 50px;
-    width: 100%;
-    text-align: start;
-  }
-
-  .partners img {
-    width: 195px;
-  }
-
-  .webform {
-    height: 1100px;
-  }
-
-  .webform__main {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .webform__main .webform__info {
-    width: 100%;
-    margin: 60px;
-  }
-
-  .webform__mail,
-  .webform__number {
-    margin-left: 25px;
-  }
-
-  .webform__info-descr {
-    width: 100%;
-    text-align: center;
-  }
-
-  .webform__info-descr span {
-    font-size: 25px;
-    margin-left: 20px;
-    line-height: 35px;
-  }
-
-  .webform__info-descr p {
-    margin-bottom: 35px;
-    text-align: start;
-    margin: 10px 0 10px 25px;
-  }
-
-  .webform__main .webform__form {
-    margin-top: 40px;
-    width: 100%;
-    margin: 0;
-    padding: 0 10px;
-  }
-
-  .webform__form-elem {
-    width: 100%;
-  }
-
-  .webform__form-btn {
-    width: 100%;
-  }
-
-  .webform__form-btn:hover {
-    background-color: #f14d34;
-  }
-
-  .webform .ds__1 {
-    left: 30%;
-  }
-
-  .webform .ds__1 img {
-    width: 200px;
-    height: 150px;
-  }
-
-  .webform .ds__2 img {
-    width: 150px;
-    height: 70px;
-  }
-
-  .webform footer {
-    height: 150px;
-    padding: 0px 20px;
-  }
-
-  .webform footer .footer__text {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
 }
-
 </style>

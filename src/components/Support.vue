@@ -259,7 +259,11 @@ p, span {
   line-height: 22px;
 }
 
-@media screen and (max-width: 700px) {
+
+
+
+
+@media screen and (max-width: 575px) {
   .support {
     margin: 0;
     padding: 10px;
@@ -282,34 +286,9 @@ p, span {
     width: 100%;
   }
 
-  .support__wrapper {
-    padding: 0px 10px;
-    height: 1000px;
-  }
-
-  .support__expertise-title {
-    font-size: 25px;
-    width: 300px;
-    margin-top: -100px;
-    line-height: 30px;
-  }
-
-  .support__expertise-list {
-    flex-direction: column;
-  }
-
-  .support__expertise-list .support__expertise-item {
-    margin-top: 30px;
-  }
-
-  .support__laptop {
-    top: 685px;
-    width: 390px;
-    height: 450px;
-  }
-
   .support__laptop img {
     width: 400px;
   }
 }
+
 </style>

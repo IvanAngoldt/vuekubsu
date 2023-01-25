@@ -1,0 +1,38 @@
+{
+  "name": "kubsu",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "swiper": "^8.4.6",
+    "vue": "^3.2.45",
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-router": "^4.0.3",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-split-carousel": "^2.2.3",
+    "vue-stick": "^1.0.7",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "vite": "^4.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "_id": "kubsu@0.0.0",
+  "readme": "ERROR: No README data found!"
+}

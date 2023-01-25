@@ -175,29 +175,11 @@ p, span {
 
 
 
-@media screen and (max-width: 700px) {
-  .support {
-    margin: 0;
-    padding: 10px;
-  }
 
-  .support__list {
-    margin: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr
-  }
 
-  .support__title {
-    font-size: 30px;
-    width: 250px;
-    line-height: 35px;
-  }
 
-  .support__item {
-    width: 100%;
-  }
 
+@media screen and (max-width: 575px) {
   .support__wrapper {
     padding: 0px 10px;
     height: 1000px;
@@ -228,4 +210,5 @@ p, span {
     width: 400px;
   }
 }
+
 </style>

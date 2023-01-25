@@ -19,7 +19,6 @@ export default{
           author: "Сергей Чепурко, руководитель проекта ",
           link: "www.personal-writer.com / www.writers-united.org",
         },
-
         {
           id: 3,
           s: false,
@@ -73,7 +72,7 @@ export default{
     }
   },
   methods: {
-    prev_review(){
+    prev_review() {
       this.reviews[this.curr-1].s = false;
       if (this.curr > 1)
         this.curr -= 1;
@@ -82,7 +81,7 @@ export default{
       this.reviews[this.curr-1].s = true;
     },
 
-    next_review(){
+    next_review() {
       this.reviews[this.curr-1].s = false;
       if (this.curr < 8)
         this.curr += 1;
@@ -226,13 +225,10 @@ export default{
   display: flex;
 }
 
-@media screen and (max-width: 700px) {
-  .reviews {
-    scale: 0.6;
-    margin-left: 0;
-  }
-  .Rewiews {
-    width: 300px;
+@media screen and (max-width: 575px) {
+  .reviews{
+    width: 500px;
   }
 }
+
 </style>

@@ -168,6 +168,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default
 {
@@ -372,6 +373,11 @@ li {
   margin-right: 50px;
   background: white;
   transition: 0.4s;
+  scale: 0.9;
+}
+
+.plans__card-starting:hover {
+  scale: 0.95;
 }
 
 .plans__card-starting .plans__card-line {
@@ -394,6 +400,11 @@ li {
   border-radius: 5px;
   background: white;
   transition: 0.4s;
+  scale: 0.9;
+}
+
+.plans__card-business:hover {
+  scale: 0.95;
 }
 
 .plans__card-business .plans__card-line {
@@ -422,6 +433,11 @@ li {
   margin-left: 50px;
   background: white;
   transition: 0.4s;
+  scale: 0.9;
+}
+
+.plans__card-vip:hover {
+  scale: 0.95;
 }
 
 .plans__card-vip .plans__card-line {
@@ -461,7 +477,7 @@ li {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 575px) {
   .plans {
     height: 1000px;
     margin: 0;
@@ -509,7 +525,7 @@ li {
     margin-bottom: 20px;
   }
 
-  .plans__body > p {
+  .plans__body>p {
     width: 100%;
     font-size: 16px;
     line-height: 22px;
@@ -559,29 +575,6 @@ li {
     color: #f14d34;
     width: 100%;
   }
-
-  .plans__card-starting {
-    scale: 0.95;
-  }
-
-  .plans__card-business {
-    scale: 0.95;
-  }
-
-  .plans__card-vip {
-    scale: 0.95;
-  }
-
-  .plans__card-starting:hover {
-    scale: 1.01;
-  }
-
-  .plans__card-business:hover {
-    scale: 1.01;
-  }
-
-  .plans__card-vip:hover {
-    scale: 1.01;
-  }
 }
+
 </style>

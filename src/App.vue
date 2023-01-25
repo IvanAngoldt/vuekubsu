@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <button class="btn-for-form" @click ="formAppear">Показать форму </button>
-    <Form  v-if="formVisible "/>
+  <div cli>
+    <button class="btn-for-form" @click ="formAppear">Связаться</button>
     <Header/>
     <Services/>
     <Support/>
@@ -13,6 +12,10 @@
     <Partners/>
     <FAQ/>
     <Footer/>
+    <div class="form">
+      <Form :is-visible="formVisible"
+            @close="formVisible = false"/>
+    </div>
   </div>
 </template>
 
@@ -59,6 +62,7 @@ export default
           this.formVisible = false;
         else
           this.formVisible = true;
+        history.pushState(false, null, "\u0000");
       }
     }
 }
@@ -96,12 +100,19 @@ li {
   list-style-type: none;
 }
 
+.form {
+  position: fixed;
+  z-index: 999;
+  top: 20%;
+  left: 40%;
+}
+
 .btn-for-form{
   color: white;
   font-size: larger;
   position: sticky;
   top: 90%;
-  left: 85%;
+  left: 90%;
   z-index: 1000;
   border: 2px solid #f14d34;
   border-radius: 4px;

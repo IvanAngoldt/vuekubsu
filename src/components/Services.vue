@@ -15,7 +15,7 @@
         <img src="../assets/img/services/competency-1.svg" alt="">
         <p>Добавление информации на сайт, создание новых разделов</p>
       </div>
-      <div class="services__item">
+      <div class="services__item xitem">
         <img src="../assets/img/services/competency-2.svg" alt="">
         <p>
           Разработка и оптимизация модулей сайта
@@ -27,7 +27,7 @@
           Интеграция с CRM, 1С, платежными системами, любыми веб-сервисами
         </p>
       </div>
-      <div class="services__item">
+      <div class="services__item xitem">
         <img src="../assets/img/services/competency-4.svg" alt="">
         <p>
           Любые доработки функционала и дизайна
@@ -39,7 +39,7 @@
           Аудит и мониторинг безопасности Drupal сайтов
         </p>
       </div>
-      <div class="services__item">
+      <div class="services__item xitem">
         <img src="../assets/img/services/competency-6.svg" alt="">
         <p>
           Миграция, импорт контента и апгрейд Drupal
@@ -51,7 +51,7 @@
           Оптимизация и ускорение Drupal сайтов
         </p>
       </div>
-      <div class="services__item">
+      <div class="services__item xitem">
         <img src="../assets/img/services/competency-8.svg" alt="">
         <p>
           Веб-маркетинг, консультации и работы по SEO
@@ -145,44 +145,46 @@ p, span {
   opacity: 0.7;
 }
 
-@media screen and (max-width: 700px) {
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+
+  .xitem {
+    visibility: hidden;
+  }
+
+  .services {
+    padding: 60px 15px;
+  }
+
   .services__list {
-    width: 50%;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
   }
 
-  .services .services__title {
-    padding: 10px 10px;
-    margin: 0;
-    font-size: 25px;
-    line-height: 35px;
-    width: 100%;
-  }
-
   .services .services__text {
-    margin: 0;
-    padding: 20px 10px;
-    width: 100%;
+    margin-bottom: 50px;
   }
 
   .services__item {
-    width: 30%;
-    margin-top: 50px;
+    width: 100%;
     margin-right: 0px;
-
   }
 
   .services__item p {
-    width: 135px;
-    font-size: 13px;
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 150px;
   }
 
   .services__item img {
-    margin: 0px auto;
+    margin-left: 100px;
     display: block;
   }
 

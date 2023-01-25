@@ -133,6 +133,17 @@ export default{
 
 
 <style scoped>
+.no-mode-fade-enter-active, .no-mode-fade-leave-active {
+  transition: opacity .5s;
+
+}
+.no-mode-fade-enter-from, .no-mode-fade-leave-to {
+  opacity: 0;
+  position: absolute;
+}
+.no-mode-fade-leave-to{
+  color:#f14d34;
+}
 
 button{
   border: none;
@@ -141,20 +152,6 @@ button{
   padding: 0;
   text-align: start;
   position: relative;
-}
-
-.no-mode-fade-enter-active, .no-mode-fade-leave-active {
-  transition: opacity .5s;
-
-}
-
-.no-mode-fade-enter-from, .no-mode-fade-leave-to {
-  opacity: 0;
-  position: absolute;
-}
-
-.no-mode-fade-leave-to{
-  color:#f14d34;
 }
 
 .header{
@@ -208,6 +205,12 @@ button{
   margin-top: 1rem;
   margin-left: 1rem;
   color: gray;
+}
+
+@media screen and (max-width: 575px) {
+  .question {
+    width: 540px;
+  }
 }
 
 </style>
